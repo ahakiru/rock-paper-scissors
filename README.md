@@ -1,0 +1,1 @@
+This project is the Rock Paper Scissors game as an excercise for the TOP for JavaScript web coding. 
