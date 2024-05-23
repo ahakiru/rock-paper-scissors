@@ -15,7 +15,33 @@ function  getHumanChoice () {
 
 let humanScore = 0;
 let computerScore = 0;
-console.log(getComputerChoice())
-console.log(getHumanChoice())
-console.log(humanScore)
-console.log(computerScore)
+
+function playRound (humanChoice, computerChoice) {
+    if (computerChoice === humanChoice) {
+        return console.log("Draw! No Winner")}
+    else if (computerChoice === "paper" & humanChoice === "rock") {
+        computerScore ++;
+        return console.log("You lose! Paper beats rock");
+    } else if (computerChoice === "paper" & humanChoice === "scissors") {
+        humanScore ++;
+        return console.log("You win! Scissors beat Paper");
+    } else if (computerChoice === "rock" & humanChoice === "scissors") {
+        computerScore ++;
+        return console.log("You lose! Rock beats Scissors");
+    } else if (computerChoice === "rock" & humanChoice === "paper") {
+        humanScore ++;
+        return console.log("You win! Paper beats rock");
+    } else if (computerChoice === "scissors" & humanChoice === "paper") {
+        computerScore ++;
+        return console.log("You lose! Scissors beat Paper");
+    } else if (computerChoice === "scissors" & humanChoice === "rock") {
+        humanScore ++;
+        return console.log("You win! Rock beats scissors");
+    } console.log(humanScore);
+    console.log(computerScore);
+
+}
+
+const computerSelection = getComputerChoice();
+const humanSelection = getHumanChoice();
+console.log(playRound(humanSelection ,computerSelection));
