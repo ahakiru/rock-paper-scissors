@@ -12,5 +12,10 @@ function  getHumanChoice () {
     else if (choice.toLowerCase() == "scissors") {return "scissors"}
     else {console.log("Error,input not found, try again.")}
     }
+
+let humanScore = 0;
+let computerScore = 0;
 console.log(getComputerChoice())
 console.log(getHumanChoice())
+console.log(humanScore)
+console.log(computerScore)
