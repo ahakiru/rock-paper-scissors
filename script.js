@@ -51,13 +51,6 @@ function playGame () {
         console.log("The computer's score is "+computerScore);
     } 
     
-   //     if (humanScore > computerScore) {
-     //       return "Congratulations, you win!"
-       // } else {return "Sorry, you lose!"}
-   // } else {
-//
-   //     playRound(humanSelection, computerSelection))
- //   }
 }
 playGame();
 
